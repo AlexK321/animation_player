@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 8 - Palette</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper" id="wrapper">
+    <header>
+        <div class="logo">
+            <img src="assets\images\logo.png">
+        </div>
+        <div class="title"> 
+          <p>P</p>
+        </div>
+    </header> 
+    <main>
+      <div class="left_menu">
+        <div class="instruments" id="instruments"> 
+          <ul>
+            <li class="instrument_box">
+                <img class="instrument_images" src="./assets/images/Choose color.png" >
+                <div> Choose color</div>
+            </li>
+            <li class="instrument_box">
+                <img class="instrument_images" src="./assets/images/Paint bucket.png" >
+                <div>Paint bucket</div>
+            </li>
+            <li class="instrument_box">
+                <img class="instrument_images" src="./assets/images/Line.png" >
+                <div>Line</div>
+            </li>
+            <li class="instrument_box" >
+                <img class="instrument_images" src="./assets/images/Transform.png" >
+                <div data-tooltip="Выберите цвет, нажмите на канвас">Color fill</div>
+            </li>
+            <li class="instrument_box">
+              <img class="instrument_images" src="./assets/images/Transform.png" >
+              <div>Pencil</div>
+          </li>
+          </ul>
+        </div>
+        <div class="color_palette" id="color_palette">
+          <div class="color">
+            <div class="current" id="current"></div>
+            Current
+          </div>
+          <div class="color">
+            <div class="previous"id="previous"></div>
+            Previous
+          </div>
+          <div class="color">
+            <div class="red"></div>
+            Red
+          </div>
+          <div class="color">
+            <div class="yellow"></div>
+            Yellow
+          </div>
+          <div class="color">
+            <div class="green"></div>
+            Green
+          </div>
+          <div class="color">
+            <div class="blue"></div>
+            Blue
+          </div>
+        </div>
+      </div>
+      <div class="left_menu_adding_canvas" id="addingCanvas">
+        <div class="buttons_container" id="buttons_container">
+          Animation
+          <div class="button" id="createNewImage">
+            New 
+          </div>
+          <div class="button" id="createDuplicateImage">
+            Dubl
+          </div>
+          <div class="button" id="deleteImage">
+            Del
+          </div>
+          <div class="button" id="saveImage">
+            Save 
+          </div>
+          <div class="button" id="example">
+            Example
+          </div>
+          <div class="button" id="runImage">
+            Run 
+          </div>
+        </div>
+      </div>
+      <div class="main_container" id="main_container">
+          <ul class="carousel" id="project_content">
+            <li class="carousel_item" id="li44">
+              <canvas id="can44" width="4" height="4"></canvas>
+            </li>
+            <li class="carousel_item" id="li3232">
+              <canvas id="can3232" width="32" height="32"></canvas>
+            </li>
+            <li class="carousel_item" id="li128128">
+              <canvas id="can128128" width="128" height="128"></canvas>
+            </li>
+            <li class="carousel_item" id="li512512">
+              <canvas id="can512512" width="512" height="512"></canvas>
+            </li>
+          </ul>
+        </div>
+      <div class="right_menu">
+        <div class="size_piskels">
+            <div class="size" id="button44">
+                4*4
+            </div>
+            <div class="size" id="button3232">
+                32*32
+            </div>
+            <div class="size" id="button128128">
+                128*128
+            </div>
+            <div class="size" id="button512512">
+              512*512
+            </div>
+        </div>
+        <div class="button" id="full">
+          Full Screen
+        </div>
+        <input type="text" class="button" id="​​searchTown" value="Samarkand">
+        <div class="button" id="getImages">
+          Upload image
+        </div>
+        <div class="button" id="clearImages">
+          Clear
+        </div>
+        <div class="button" id="monochromeImage">
+          Monochrome image
+        </div>
+      </div>
+    </main>
+    <footer> 
+      <div class="title"> 
+        <p>Piskel</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
